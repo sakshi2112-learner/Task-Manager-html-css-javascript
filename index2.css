@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    background-color: rgb(138, 138, 246);
+    display: grid;
+    grid: "header header header header" auto "...... lists  active ......" auto/1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
+
+    }
+
+.title {
+    grid-area: header;
+    text-align:centre;
+    padding: 10px;
+    font-size: 79px;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px blueviolet;
+
+
+}
+
+.list-name {
+    cursor: pointer;
+}
+
+.list-name:hover {
+    opacity: 0.4;
+}
+
+form {
+    display: flex;
+}
+
+
+.active-list {
+    font-size: 700;
+}
+
+.task-list {
+    line-height: 1.7;
+    font-size: 0.9em;
+    padding-left: 1.1em;
+
+
+}
+
+.list-title {
+    margin: 0;
+}
+
+
+
+.todo-list {
+    background-color: whitesmoke;
+    --spacer: 2rem;
+    grid-area: active;
+
+}
+
+.todo-header {
+
+    background-color: rgb(197, 194, 194);    
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.new-list {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1.5px solid  black;
+    font-size: inherit;
+
+    order: 2;
+}
+
+.new-list:hover {
+    border-bottom-width: 3px ;
+    
+}
+::placeholder {
+    color: black;
+    opacity: 0.5;
+}
+
+
+
+/* [type="checkbox"]:checked + label .custom-checkbox {
+    box-shadow: inset 0 0 0px 2px white;
+  } */
+
+
+  /* .custom-checkbox {
+    display: inline-block;
+    border: 2px solid red;
+    border-radius: 50%;
+  } */
+
+  .todo-body {
+    line-height: 2;
+    padding: 1.5rem;
+}
+
+.task label {
+        
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.task label::after {
+    content: "";
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -35%;
+    height: 1.7px;
+    background: black;
+}
+
+[type="checkbox"]:checked + label  {
+    opacity: 0.4;
+    text-decoration: line-through;
+
+  }
+
+  .btn-delete {
+    background-color: transparent;
+    color: inherit;
+    font-size: 18px;   
+    }
+
+
+.delete-stuff {
+    display: inline-block;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 35px;
+}
+
+.btn-list {
+    background-color: transparent;
+    border: 0;
+    font-size: 35px;
+    
+}
+
+.btn-task {
+    background-color: transparent;
+    border: 0;
+    font-size: 35px;
+    
+
+}
+
+button:hover {
+opacity: 0.6;
+cursor: pointer;
+}
+
+
+
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 34px;
+}
+
+
